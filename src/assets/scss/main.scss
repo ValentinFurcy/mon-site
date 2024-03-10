@@ -1,0 +1,51 @@
+@use "reset";
+@use "token";
+@use "_header";
+@use "_footer";
+
+body {
+  font-family: token.$font;
+  background-color: #fefcfb;
+  background-color: #001F54;
+  ;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+
+  .title {
+    //width: 50vw;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    margin-top: 50px;
+
+    border: solid 3px #7b2cbf;
+    border-radius: 30px;
+    padding: 2rem;
+    background-color:#3C096C;
+
+    font-size: 1.5vw;
+    text-align: center;
+    color: #eaebff;
+
+    h1{
+      padding-bottom: 1rem;
+    }
+
+  }
+
+  .description{
+    color: #eaebff;
+    margin-top: 150px;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    grid-column-start: 3;
+    grid-column-end: 10;
+    text-align: justify;
+    line-height: 2rem;
+  }
+}
+
+

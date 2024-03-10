@@ -1,0 +1,9 @@
+@font-face{
+    font-family: "Luciole";
+    src: url("../font/Luciole-Regular.woff") format("woff");
+    src: url("../font/Luciole-Regular.woff2") format("woff2");
+}
+
+$font: "Luciole", sans-serif;
+
+$font-color: #eaebff;

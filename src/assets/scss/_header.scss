@@ -1,0 +1,40 @@
+@use "token";
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: solid 2px #7b2cbf ;
+  
+    #banniere {
+      width: 100vw;  
+    }
+
+    #photo_profil{
+      width: 15vw;
+      position: absolute;
+      top: 80%;
+      left: 20%;
+    }
+  
+    nav {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      margin-top: 1.5rem;
+      padding-right: 1.5rem;
+  
+      li {
+        display: inline;
+        padding: 0 1.5rem;
+        font-weight: bold;
+
+        a{
+          color: token.$font-color;
+        }
+      } 
+    }
+  }

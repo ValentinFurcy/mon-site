@@ -1,0 +1,10 @@
+@use "token";
+
+footer{
+    display: flex;
+    height: 300px;
+    background-color:#240046;
+    color: token.$font-color;
+    justify-content: center;
+    align-items: flex-end;
+}
